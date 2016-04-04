@@ -1,1 +1,8 @@
-{{outlet}}
+<div class="container">
+  <h1>{{model.title}} | {{model.category}}</h1>
+  <h2>{{model.author}} | {{model.date}}</h2>
+  <h5>{{model.description}}</h5>
+  {{model.image}}
+
+  <button {{action "deletePost" model}}>Delete Post!</button>
+</div>
