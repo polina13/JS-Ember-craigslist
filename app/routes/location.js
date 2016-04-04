@@ -23,6 +23,15 @@ export default Ember.Route.extend({
       });
       model.save();
       this.transitionTo('index');
+    },
+    savePost(params) {
+      var newPost = this.store.createRecord('post', params);
+      var location = params.location;
+      location.get('posts').addObject(newPost);
+      newPost.save().then(function() {
+        return location.save();
+      });
+      this.transitionTo('location', params.location);
     }
   }
 });

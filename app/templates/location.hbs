@@ -6,3 +6,14 @@
 <button {{action 'deleteLocation' model}}>Delete</button>
 
 {{update-location updateLocation="updateLocation" model=model}}
+
+<ul>
+  {{#each model.posts as |post|}}
+    {{post.title}}
+    {{post.author}}
+    {{post.category}}
+    {{post.date}}
+  {{/each}}
+</ul>
+
+{{new-post savePost="savePost" location=model}}

@@ -1,9 +1,14 @@
 <h1>CraigsList</h1>
 <ul>
-  {{log model.locations}}
   {{#each model.locations as |location|}}
     {{location-tile location=location}}
   {{/each}}
 </ul>
 
 {{new-location saveLocation="saveLocation"}}
+
+<ul>
+  {{#each model.posts as |post|}}
+    {{post-tile post=post updatePost="updatePost" deletePost="deletePost"}}
+  {{/each}}
+</ul>
