@@ -1,7 +1,7 @@
 <h1>CraigsList</h1>
 <ul>
   {{#each model.locations as |location|}}
-    {{location-tile location=location}}
+    {{location-popularity location}}{{location-tile location=location}}
   {{/each}}
 </ul>
 
