@@ -9,7 +9,7 @@
 
 <ul>
   {{#each model.posts as |post|}}
-    {{#link-to 'post' post.id}}{{post-tile updatePost="updatePost" deletePost="deletePost" post=post}}{{/link-to}}
+    {{post-image post}}{{#link-to 'post' post.id}}{{post-tile updatePost="updatePost" deletePost="deletePost" post=post}}{{/link-to}}
   {{/each}}
 </ul>
 
