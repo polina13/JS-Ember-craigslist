@@ -1,0 +1,7 @@
+<h1>CraigsList</h1>
+<ul>
+  {{log model.locations}}
+  {{#each model.locations as |location|}}
+    {{location-tile location=location}}
+  {{/each}}
+</ul>

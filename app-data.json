@@ -1,5 +1,4 @@
-{
-  "location": [{
+{ "locations":[{
     "name": "Portland",
     "state": "OR",
     "country": "USA"
