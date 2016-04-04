@@ -1,0 +1,13 @@
+{{#if updateLocationShowForm}}
+  <form>
+    <label for="name">Name</label>
+    {{input id="name" value=name placeholder=model.name}}
+    <label for="state">State</label>
+    {{input id="state" value=state placeholder=model.state}}
+    <label for="country">Country</label>
+    {{input id="country" value=country placeholder=model.country}}
+    <button {{action 'updateLocation' model}}>Update Location</button>
+  </form>
+{{else}}
+  <button {{action 'showForm'}}>Update Location</button>
+{{/if}}
