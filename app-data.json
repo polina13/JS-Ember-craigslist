@@ -1,0 +1,31 @@
+{
+  "location": [{
+    "name": "Portland",
+    "state": "OR",
+    "country": "USA"
+    },{
+    "name": "San Francisco",
+    "state": "CA",
+    "country": "USA"
+    },{
+    "name": "New York",
+    "state": "NY",
+    "country": "USA"
+    },{
+    "name": "Chicago",
+    "state": "IL",
+    "country": "USA"
+    },{
+    "name": "Portland",
+    "state": "ME",
+    "country": "USA"
+    },{
+    "name": "Los Angelos",
+    "state": "CA",
+    "country": "USA"
+    },{
+    "name": "New Orleans",
+    "state": "LA",
+    "country": "USA"
+  }]
+}
