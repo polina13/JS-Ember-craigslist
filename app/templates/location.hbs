@@ -1,1 +1,6 @@
-{{outlet}}
+<div class="container">
+  <h1>{{model.name}}, {{model.state}}</h1>
+  <h2>{{model.country}}</h2>
+</div>
+
+<button {{action 'deleteLocation' model}}>Delete</button>
