@@ -1,0 +1,15 @@
+{{#if addNewLocation}}
+  <form>
+    <label for="name">Name</label>
+    {{input id="name" value=name}}
+    <label for="state">State</label>
+    {{input id="state" value=state}}
+    <label for="country">Country</label>
+    {{input id="country" value=country}}
+    <button {{action 'saveLocation'}}>Submit New Location</button>
+  </form>
+
+{{else}}
+
+  <button {{action 'showForm'}}>New Location</button>
+{{/if}}

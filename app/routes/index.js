@@ -8,6 +8,10 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    
+    saveLocation(params) {
+      var newLocation = this.store.createRecord('location', params);
+      newLocation.save();
+      this.transitionTo('index');
+    },
   }
 });
