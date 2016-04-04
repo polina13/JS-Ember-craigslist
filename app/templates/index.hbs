@@ -6,3 +6,14 @@
 </ul>
 
 {{new-location saveLocation="saveLocation"}}
+
+
+{{!--
+1. if there's a component (location-tile): go to the component template (location-tile.hbs)
+
+2. and display your computed property there (fullLocation)
+
+3. output should equal: <li> #link-to 'location' location.id location.fullLocation /link-to </li>
+
+//location.fullLocation: is coming from this page, line 3 ({{#each model.locations as |location|
+--}}
